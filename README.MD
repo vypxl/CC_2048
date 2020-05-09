@@ -5,4 +5,4 @@ It's not perfect and not pure, but the code is much shorter and clearer.
 Should behave the same as the original.
 
 [Original code](https://github.com/CodingTrain/website/tree/master/CodingChallenges/CC_94_2048)
-[Working example](https://colonlc.github.io/apps/2048)
+[Working example](https://vypxl.github.io/CC_2048)
