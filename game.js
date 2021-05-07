@@ -28,7 +28,7 @@ function isGameWon() {
 function isGameOver() {
   return (
     !grid.some(row => row.includes(0)) &&
-    grid.every(row => _.isEqual(row, operate(row))) &&
-    transposeGrid(grid, 1).every(row => _.isEqual(row, operate(row)))
+    grid.every(row => operate(row).every((item, x) => item == row[x])) &&
+    transposeGrid(grid, 1).every(row => operate(row).every((item, x) => item == row[x]))
   );
 }

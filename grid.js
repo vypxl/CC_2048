@@ -3,7 +3,7 @@ function blankGrid() {
   }
 
 function compare(a, b) {
-  return !a.every((row, x) => _.isEqual(row, b[x]));
+  return !a.every((row, x) => row.every((item, y) => item == b[x][y]));
 }
 
 //slice() copies an array
